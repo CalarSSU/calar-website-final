@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Calar</title>
+    </head>
+    <body>
+        <div class="progressbar">
+            <div class="progressbar__fill"></div>
+        </div>
+        <div class="wrapper swiper">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide" id="dector1">
+                    <div class="container">
+                        <div class="header">
+                            <p class="logo">C A L A R</p>
+                            <a target="_blank" class="header__link" href="https://www.sgu.ru/?ysclid=lanzq4l5td370401969">
+                                <span class="logo__r"><strong>СГУ </strong> имени Н. Г. Чернышевского</span>
+                            </a>
+                        </div>
+                        <div class="main__wrapper">
+                            <div class="main__text">
+                                <h1 class="main__title">РАСПИСАНИЕ ЗАНЯТИЙ</h1>
+                                <p class="main__text-p">
+                                    CALAR — это API, позволяющий студентам нашего университета интегрировать <br />
+                                    актуальное расписание занятий в любой календарь. Чтобы получить ссылку с <br />
+                                    индивидуальным расписанием, нажмите кнопку "Начать".
+                                </p>
+                            </div>
+                            <button class="main__btn" id="btn1">Начать</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="swiper-slide" id="dector2">
+                    <div class="progress"></div>
+                    <div class="container">
+                        <div class="header">
+                            <p class="logo">C A L A R</p>
+                            <p data-date class="logo__r">16.10.2022</p>
+                        </div>
+                        <div class="main__wrapper">
+                            <div class="main__text">
+                                <span>1 шаг</span>
+                                <h2 class="main__title">где вы учитесь?</h2>
+                                <p class="main__text-p">Заполните следующие данные о Вашем образовании</p>
+                                <form class="input__form" action="#">
+                                    <div class="input__form-item input__form-item1">
+                                        <p class="input__form-label">Учебное подразделение</p>
+                                        <div class="select__box">
+                                            <span class="select__arr"></span>
+                                            <select data-required id="department">
+                                                <option selected disabled value="">Выберите подразделение</option>
+                                                <option value="biology">Биологический факультет</option>
+                                                <option value="geography">Географический факультет</option>
+                                                <option value="geological">Геологический факультет</option>
+                                                <option value="additional">Институт дополнительного профессионального образования</option>
+                                                <option value="arts">Институт искусств</option>
+                                                <option value="history">Институт истории и международных отношений</option>
+                                                <option value="physics">Институт физики</option>
+                                                <option value="sports">Институт физической культуры и спорта</option>
+                                                <option value="philology">Институт филологии и журналистики</option>
+                                                <option value="chemistry">Институт химии</option>
+                                                <option value="mechmath">Механико-математический факультет</option>
+                                                <option value="social">Социологический факультет</option>
+                                                <option value="languages">Факультет иностранных языков и лингводидактики</option>
+                                                <option value="it">Факультет компьютерных наук и информационных технологий</option>
+                                                <option value="psychology">Факультет психологии</option>
+                                                <option value="pedagogical ">Факультет психолого-педагогического и специального образования</option>
+                                                <option value="medicine">Факультет фундаментальной медицины и медицинских технологий</option>
+                                                <option value="philosophy">Философский факультет</option>
+                                                <option value="economics">Экономический факультет</option>
+                                                <option value="law">Юридический факультет</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input__form-item input__form-item2">
+                                        <p class="input__form-label">Форма обучения</p>
+                                        <div class="select__box">
+                                            <span class="select__arr"></span>
+                                            <select data-required id="map_form">
+                                                <option selected disabled value="">Выберите форму</option>
+                                                <option value="do">Очная форма</option>
+                                                <option value="zo">Заочная форма</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input__form-item input__form-item3">
+                                        <p class="input__form-label">Группа</p>
+                                        <input type="text" id="group" data-required placeholder="введите" />
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="main__btn" id="btn2">Далее</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="swiper-slide" id="dector3">
+                    <div class="container">
+                        <div class="header">
+                            <p class="logo">C A L A R</p>
+                            <p data-date class="logo__r">16.10.2022</p>
+                        </div>
+                        <div class="main__wrapper">
+                            <div class="main__text">
+                                <span>2 шаг</span>
+                                <h2 class="main__title">последний шаг</h2>
+                                <p class="main__text-p">Нам нужно узнать еще немного информации о Вас</p>
+
+                                <form class="input__form" action="#">
+                                    <div class="input__form-item">
+                                        <p class="input__form-label">ЧЁТНОСТЬ</p>
+                                        <div class="input__form-grid grid-column">
+                                            <label class="checkbox">
+                                                <input type="radio" checked name="parity" value="num" class="checkbox__input" hidden />
+                                                <span> числитель </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="radio" name="parity" value="den" class="checkbox__input" hidden />
+                                                <span> знаменатель </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="input__form-item">
+                                        <p class="input__form-label">ДРУГОЕ</p>
+                                        <div class="input__form-grid">
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="1" class="checkbox__input" hidden />
+                                                <span> 1 под. </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="2" class="checkbox__input" hidden />
+                                                <span> 2 под. </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="1a" class="checkbox__input" hidden />
+                                                <span> англ.ст.1 </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" checked value="2a" class="checkbox__input" hidden />
+                                                <span> англ.ст.2 </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="3a" class="checkbox__input" hidden />
+                                                <span> англ.ст.3 </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="4a" class="checkbox__input" hidden />
+                                                <span> англ.ст.4 </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="5a" class="checkbox__input" hidden />
+                                                <span> англ.ст.5 </span>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="other" value="digit" class="checkbox__input" hidden />
+                                                <span> цифровая кафедра </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="main__btn" id="btn3">получить</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="swiper-slide" id="dector4">
+                    <div class="container">
+                        <div class="header">
+                            <p class="logo">C A L A R</p>
+                            <button class="header__btn-start">
+                                <p class="logo__r"><strong>В </strong>начало</p>
+                            </button>
+                        </div>
+                        <div class="main__wrapper">
+                            <div class="main__text">
+                                <span>3 шаг</span>
+                                <h2 class="main__title">Вот и всЁ!</h2>
+                                <p class="main__text-p">Ваше расписание готово</p>
+                                <h4 id="main__link">https://www.</h4>
+                                <div class="btn__box">
+                                    <div class="btn__wrap">
+                                        <button class="btn_1"></button>
+                                    </div>
+                                    <div class="btn__wrap">
+                                        <button class="btn_2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
