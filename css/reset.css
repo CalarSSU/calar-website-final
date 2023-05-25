@@ -1,62 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Lora:wght@500;600;700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@400;500;600&family=Petrona&family=Roboto+Slab:wght@300;400;500&display=swap');
-
-@font-face {
-    font-family: 'New York';
-    src: url('../fonts/NewYork.eot');
-    src: local('New York'), local('NewYork'),
-        url('../fonts/NewYork.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NewYork.woff2') format('woff2'),
-        url('../fonts/NewYork.woff') format('woff'),
-        url('../fonts/NewYork.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NATS';
-    src: local('NATS'), local('NATS-Regular'),
-        url('../fonts/NATS-Regular.woff2') format('woff2'),
-        url('../fonts/NATS-Regular.woff') format('woff'),
-        url('../fonts/NATS-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ledger&family=Oswald:wght@400;500;600&family=Fira+Code&display=swap");
 
 body {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 html {
-    /* scroll-behavior: smooth; */
+  /* scroll-behavior: smooth; */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul {
-    margin-left: 0;
-    padding-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
-    transition: all .3s;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
 }
 
-img, video {
-    max-width: 100%;
+img,
+video {
+  max-width: 100%;
 }
 
-
-html, body {
-    scrollbar-width: thin;
+html,
+body {
+  scrollbar-width: thin;
 }
